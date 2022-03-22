@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.menu-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #c4c4c4;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+}
+
+.menu-page.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu .title {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.menu p {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.select {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border: 1px solid #000;
+    transition: all 0.3s;
+}
+
+button.select.active {
+    color: #F1F1F1;
+    background-color: #434343
+}
+
+button.select:hover {
+    background-color: #d5d4d4;
+}
+
+button.select.active:hover {
+    background-color: #434343
+}
+
+button.select:active {
+    background-color: #b6b6b6
+}
+
+button.select.active:active {
+    background-color: #323232
+}
+
+.start-wrap {
+    padding-top: 30px;
+    text-align: left;
+}
+
+button.start-button {
+    padding: 10px 20px;
+    font-size: 3rem;
+    border: 5px dashed #000;
+    transition: 0.3s all;
+}
+
+button.start-button:hover {
+    color: #3DA75B;
+    border: 5px dashed #3DA75B;
+}
+
+.game-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.game-page .score div {
+    margin-bottom: 15px;
+}
+
+.field {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 505px;
+}
+
+.field div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 168px;
+}
+
+
+.field div:nth-child(2),
+.field div:nth-child(5),
+.field div:nth-child(8) {
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+}
+
+.field div:nth-child(4),
+.field div:nth-child(5),
+.field div:nth-child(6) {
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+.game-page .winnerMsg {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.game-page .winnerMsg.active {
+    opacity: 1;
+}

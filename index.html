@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-page" id="menuPage">
+            <div class="menu">
+                <div class="title">Tic Tac Toe</div>
+                <p>Choose your opponent</p>
+                <div>
+                    <button class="select active">Player 2</button>
+                    <button class="select">Bot</button>
+                </div>
+                <div class="start-wrap">
+                    <button class="start-button" id="start">Start</button>
+                </div>
+            </div>
+        </div>
+        <div class="game-page" id="gamePage">
+            <div class="wrapper">
+                <div class="score">
+                    <div>
+                        Player: <span>0</span>
+                    </div>
+                    <div>
+                        Bot: <span>0</span>
+                    </div>
+                </div>
+                <div class="field">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="winnerMsg">Player 1 won!</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
