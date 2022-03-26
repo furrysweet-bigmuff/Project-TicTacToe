@@ -10,30 +10,30 @@
 </head>
 <body>
     <div class="container">
-        <!-- <div class="menu-page" id="menuPage">
+        <div class="menu-page" id="menuScreen">
             <div class="menu">
                 <div class="title">Tic Tac Toe</div>
                 <p>Choose your opponent</p>
-                <div>
-                    <button class="select active">Player 2</button>
-                    <button class="select">Bot</button>
+                <div id="selectButtons">
+                    <button class="select active" value="player2">Player 2</button>
+                    <button class="select" value="bot">Bot</button>
                 </div>
                 <div class="start-wrap">
                     <button class="start-button" id="start">Start</button>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="game-page" id="gamePage">
             <div class="wrapper">
                 <div class="score">
                     <div>
-                        Player: <span>0</span>
+                        Player: <span id="oneScore">0</span>
                     </div>
                     <div>
-                        Bot: <span>0</span>
+                        Bot: <span id="twoScore">0</span>
                     </div>
                 </div>
-                <div class="field">
+                <div class="field" id="field">
                     <div id="0"></div>
                     <div id="1"></div>
                     <div id="2"></div>
@@ -44,9 +44,14 @@
                     <div id="7"></div>
                     <div id="8"></div>
                 </div>
-                <div class="winnerMsg">Player 1 won!</div>
+                <div class="winnerMsg" id="winnerMsg">Player 1 won!</div>
+                <div class="continue-screen" id="continueScreen">
+                    <div id="nextRound">Next round</div>
+                    <div id="restart">Restart</div>
+                </div>
             </div>
         </div>
+        <div class="back" id="back">Back -></div>
     </div>
     <script src="script.js"></script>
 </body>
